@@ -1,0 +1,40 @@
+.usersBlock {
+
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: -29px 0 50px -29px;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  .showMore {
+    display: block;
+    margin: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .usersBlock {
+
+    .wrapper {
+      margin-top: -16px;
+      margin-left: -16px;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .usersBlock {
+
+    .wrapper {
+      margin-top: -29px;
+      margin-left: -29px;
+    }
+  }
+}

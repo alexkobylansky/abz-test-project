@@ -1,24 +1,28 @@
-.wrapper {
-  height: 60px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
+header#header {
+  background-color: white;
 
-  .logo {
-    width: 104px;
-    height: 26px;
-
-    image {
-      object-fit: contain;
-    }
-  }
-
-  .buttonGroup {
-    width: 210px;
+  .wrapper {
+    height: 60px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+
+    .logo {
+      width: 104px;
+      height: 26px;
+
+      image {
+        object-fit: contain;
+      }
+    }
+
+    .buttonGroup {
+      width: 210px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
   }
 }

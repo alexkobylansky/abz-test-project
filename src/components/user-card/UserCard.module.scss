@@ -1,0 +1,74 @@
+@use '/src/assets/styles/vars' as *;
+
+.userCard {
+  padding: 20px;
+  height: 254px;
+  width: 100%;
+  border-radius: 10px;
+  background-color: $white-text-color;
+  margin: 0 0 16px 0;
+
+  .avatarBlock {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+
+    img {
+      border-radius: 50%;
+    }
+  }
+
+  .tooltipWrapper {
+    position: relative;
+    cursor: pointer;
+
+    .tooltipText {
+      position: absolute;
+      bottom: -30px;
+      left: 50%;
+      transform: translateX(-50%);
+      visibility: hidden;
+      background-color: rgba(0, 0, 0, 0.87);
+      border-radius: 4px;
+      padding: 3px 16px;
+      color: $white-text-color;
+      z-index: 1;
+    }
+
+    &:hover {
+      .tooltipText {
+        visibility: visible;
+      }
+    }
+  }
+
+  .fullName {
+    margin-bottom: 20px;
+  }
+
+  p {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 16px;
+    line-height: 1.62;
+    font-weight: 400;
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .userCard {
+    width: calc(50% - 16px);
+    margin: 16px 0 0 16px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .userCard {
+    width: calc(33.33% - 30px);
+    margin: 30px 0 0 30px;
+  }
+}

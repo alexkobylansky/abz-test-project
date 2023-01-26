@@ -1,0 +1,24 @@
+.formBlock {
+  h3 {
+    margin: 0 0 11px;
+  }
+  .formWrapper {
+    max-width: 380px;
+    margin: auto;
+
+    .inputField {
+      margin-bottom: 50px;
+    }
+    /*TODO don't work pseudo class*/
+    .inputField:last-of-type {
+      margin-bottom: 0;
+    }
+    .radioButtonsBlock {
+      margin: 43px 0 47px 0;
+    }
+  }
+  button[type="submit"] {
+    display: block;
+    margin: auto;
+  }
+}

@@ -6,9 +6,34 @@
   box-sizing: border-box;
 }
 
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+
 body {
   font-family: "Nunito", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+h1,
+h2 {
+  font-size: 40px;
+  line-height: 1;
+  font-weight: 400;
+  text-align: center;
+}
+
+h3 {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+p {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
 }
